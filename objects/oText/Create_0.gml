@@ -10,3 +10,6 @@ x2Target = RESOLUTION_W;
 
 lerpProgress = 0;
 textProgress = 0;
+
+responses = ["Test response","Here is another test responses !"];
+responseSelected = 0;
