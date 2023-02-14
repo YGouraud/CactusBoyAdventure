@@ -21,6 +21,12 @@ if (keyboard_check_pressed(vk_space))
 	var _messageLength = string_length(message);
 	if (textProgress >= _messageLength)
 	{
+		if (responses[0] != -1)
+		{
+			//if you want to do stuff with the instance calling the text
+			with (originInstance) DialogueResponses(other.responseScript[other.responseSelected]);
+		}
+		
 		//destroy the text box and advance the queued text box
 		instance_destroy();
 		if (instance_exists(oTextQueue))

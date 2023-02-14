@@ -25,6 +25,7 @@
     {"name":"MACROS","order":1,"path":"scripts/MACROS/MACROS.yy",},
     {"name":"ScriptExecuteArray","order":8,"path":"scripts/ScriptExecuteArray/ScriptExecuteArray.yy",},
     {"name":"pEntity","order":4,"path":"objects/pEntity/pEntity.yy",},
+    {"name":"DialogueResponses","order":9,"path":"scripts/DialogueResponses/DialogueResponses.yy",},
     {"name":"sTextBoxBg","order":5,"path":"sprites/sTextBoxBg/sTextBoxBg.yy",},
     {"name":"sTiles","order":4,"path":"sprites/sTiles/sTiles.yy",},
     {"name":"oTextQueue","order":3,"path":"objects/oTextQueue/oTextQueue.yy",},
