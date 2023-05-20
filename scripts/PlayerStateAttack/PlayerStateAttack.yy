@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "PlayerStateBonk",
+  "name": "PlayerStateAttack",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

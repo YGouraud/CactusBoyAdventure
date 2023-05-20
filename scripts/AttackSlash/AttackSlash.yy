@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "PlayerStateBonk",
+  "name": "AttackSlash",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Player StateMachine",
-    "path": "folders/Scripts/Player StateMachine.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }
