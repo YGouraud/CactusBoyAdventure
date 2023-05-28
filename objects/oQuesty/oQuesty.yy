@@ -10,8 +10,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"propertyId":{"name":"entityNPC","path":"objects/pEntity/pEntity.yy",},"value":"True",},
   ],
   "parent": {
-    "name": "Objets",
-    "path": "folders/Objets.yy",
+    "name": "Entities",
+    "path": "folders/Objets/Entities.yy",
   },
   "parentObjectId": {
     "name": "pEntity",

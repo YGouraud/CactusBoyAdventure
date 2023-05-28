@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "PlayerCollision",
+  "name": "EntityHitSolid",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Player General",
-    "path": "folders/Scripts/Player General.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }
