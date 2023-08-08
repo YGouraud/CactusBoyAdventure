@@ -2,10 +2,10 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "PlayerCollision",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Player General",
+    "path": "folders/Scripts/Player General.yy",
   },
 }

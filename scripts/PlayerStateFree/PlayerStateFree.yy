@@ -2,10 +2,10 @@
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
   "name": "PlayerStateFree",
-  "isDnD": false,
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Player StateMachine",
+    "path": "folders/Scripts/Player StateMachine.yy",
   },
 }
