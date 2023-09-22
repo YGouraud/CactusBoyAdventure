@@ -9,5 +9,3 @@ image_index = irandom(image_number-1);
 collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
 
 image_xscale = choose(1,-1);
-spd = 2;
-direction = random(360);

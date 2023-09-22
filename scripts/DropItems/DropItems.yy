@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "EntityHitSolid",
+  "name": "DropItems",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "EntityHit",
-    "path": "folders/Scripts/EntityHit.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
 }
