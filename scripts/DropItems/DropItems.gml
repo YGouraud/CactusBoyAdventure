@@ -1,4 +1,4 @@
-function DropItems(){
+function DropItems(argument0, argument1, argument2){
 	// @desc DropItems(x,y,[items])
 	// @arg x
 	// @arg y
