@@ -41,6 +41,7 @@
   },
   "resources": [
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
+    {"id":{"name":"oFragPlant","path":"objects/oFragPlant/oFragPlant.yy",},},
     {"id":{"name":"oPlantB","path":"objects/oPlantB/oPlantB.yy",},},
     {"id":{"name":"oPlant","path":"objects/oPlant/oPlant.yy",},},
     {"id":{"name":"PlayerAnimateSprite","path":"scripts/PlayerAnimateSprite/PlayerAnimateSprite.yy",},},
@@ -50,6 +51,7 @@
     {"id":{"name":"tCol","path":"tilesets/tCol/tCol.yy",},},
     {"id":{"name":"rinit","path":"rooms/rinit/rinit.yy",},},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},},
+    {"id":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},},
     {"id":{"name":"ScriptExecuteArray","path":"scripts/ScriptExecuteArray/ScriptExecuteArray.yy",},},
     {"id":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},},
     {"id":{"name":"EntityHitSolid","path":"scripts/EntityHitSolid/EntityHitSolid.yy",},},
@@ -72,6 +74,7 @@
     {"id":{"name":"sSignpost","path":"sprites/sSignpost/sSignpost.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"PlayerStateLocked","path":"scripts/PlayerStateLocked/PlayerStateLocked.yy",},},
+    {"id":{"name":"sFrag_plant","path":"sprites/sFrag_plant/sFrag_plant.yy",},},
     {"id":{"name":"NewTextBox","path":"scripts/NewTextBox/NewTextBox.yy",},},
     {"id":{"name":"sPlant","path":"sprites/sPlant/sPlant.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
