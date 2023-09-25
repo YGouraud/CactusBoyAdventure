@@ -64,7 +64,7 @@ function PlayerCollision(){
 	if (sign(vSpeed) == -1 &&  BboxCollisionVertical(collisionMap, _hPlayerBbox, _wPlayerBbox, vSpeed, x, y))
 	{
 		y -= y mod TILE_SIZE;
-		y += _wPlayerBbox-1;
+		y +=_hPlayerBbox;
 		vSpeed = 0;
 		_collision = true;
 	}
