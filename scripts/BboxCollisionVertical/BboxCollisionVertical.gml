@@ -5,7 +5,6 @@ function BboxCollisionVertical(_collisionMap, _wBboxSize, _vSpeed, x, y){
 	//@arg x
 	//@arg y
 	
-	
 	var _range = [x - _wBboxSize, x, x + _wBboxSize];
 	
 	if (sign(_vSpeed) == 1){ //Vers le bas

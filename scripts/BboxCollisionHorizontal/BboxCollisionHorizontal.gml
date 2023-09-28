@@ -5,9 +5,7 @@ function BboxCollisionHorizontal(_collisionMap, _wBboxSize, _hSpeed, x, y){
 	//@arg x
 	//@arg y
 	
-	
 	var _range = [y, y - _wBboxSize];
-	
 	
 	if (sign(_hSpeed) == 1){ //Vers la droite
 		for (var i = 0; i < array_length(_range); i++) {
