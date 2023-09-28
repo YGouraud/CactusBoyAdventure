@@ -37,7 +37,7 @@ function PlayerStateFree(){
 		
 		var _activateX = lengthdir_x(8, direction);
 		var _activateY = lengthdir_y(8, direction);
-		activate = instance_position(x+_activateX, y-8+_activateY, pEntity);
+		activate = instance_position(x+_activateX, y-4+_activateY, pEntity);
 		
 		if (activate == noone || activate.entityActivateScript == -1)
 		{

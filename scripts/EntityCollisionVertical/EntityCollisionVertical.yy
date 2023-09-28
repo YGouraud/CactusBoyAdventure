@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "BboxCollisionVertical",
+  "name": "EntityCollisionVertical",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
