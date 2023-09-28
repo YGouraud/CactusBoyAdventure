@@ -1,4 +1,4 @@
-/// @description Insérez la description ici
+/// @description Show the text little by little
 
 lerpProgress += (1-lerpProgress) / 50;
 textProgress += global.textSpeed;

@@ -1,28 +1,41 @@
-
 function PlayerCollision(){
 	var _collision = false;
 	var _entityList = ds_list_create();
 	
+	// _hPlayerBbox = sprite_get_bbox_bottom(sprite_index) - sprite_get_bbox_top(sprite_index); //pas centré
+	var _wPlayerBbox = floor((sprite_get_bbox_right(sprite_index) - sprite_get_bbox_left(sprite_index) + 1) * 0.5); //centré
+	
 	//Horizontal Tiles
-	if (tilemap_get_at_pixel(collisionMap, x + hSpeed, y))
+	//Vers la droite
+	if (sign(hSpeed) == 1 && BboxCollisionHorizontal(collisionMap, _wPlayerBbox, hSpeed, x, y))
 	{
 		x -= x mod TILE_SIZE;
-		if (sign(hSpeed) == 1) x += TILE_SIZE - 1;
+		x += TILE_SIZE - 1 -_wPlayerBbox;
 		hSpeed = 0;
+		_collision = true;
+	}
+	//Vers la gauche
+	if (sign(hSpeed) == -1 && BboxCollisionHorizontal(collisionMap, _wPlayerBbox, hSpeed, x, y))
+	{
+		x -= x mod TILE_SIZE;
+		hSpeed = 0;
+		x +=_wPlayerBbox;
 		_collision = true;
 	}
 	
 	//Horizontal Entities
-	var _entityCount = instance_position_list(x + hSpeed, y, pEntity, _entityList, false);
+	
+	var _entityCount = EntityCollisionHorizontal(_entityList, _wPlayerBbox, hSpeed, x, y);
 	var _snapX;
+	//if (ds_list_size(_entityList) != 0) show_debug_message(string(ds_list_size(_entityList)) + "\n");
 	
 	while(_entityCount > 0) {
 		var _entityCheck = _entityList[| 0];
 		if (_entityCheck.entityCollision == true) {
 			
 			//Move as close as we can
-			if(sign(hSpeed) == -1) _snapX = _entityCheck.bbox_right+1;
-			else _snapX = _entityCheck.bbox_left-1;
+			if(sign(hSpeed) == -1) _snapX = _entityCheck.bbox_right + 1 + _wPlayerBbox;
+			else _snapX = _entityCheck.bbox_left - 1 - _wPlayerBbox;
 			x =_snapX;
 			hSpeed = 0;
 			_collision = true;
@@ -39,24 +52,35 @@ function PlayerCollision(){
 	ds_list_clear(_entityList);
 	
 	//Vertical Tiles
-	if (tilemap_get_at_pixel(collisionMap, x, y + vSpeed))
+	//Vers le bas
+	if (sign(vSpeed) == 1 && BboxCollisionVertical(collisionMap, _wPlayerBbox, vSpeed, x, y))
 	{
 		y -= y mod TILE_SIZE;
-		if (sign(vSpeed) == 1) y += TILE_SIZE - 1;
+		y += TILE_SIZE - 1;
+		vSpeed = 0;
+		_collision = true;
+	}
+	
+	
+	//Vers le haut
+	if (sign(vSpeed) == -1 &&  BboxCollisionVertical(collisionMap, _wPlayerBbox, vSpeed, x, y))
+	{
+		y -= y mod TILE_SIZE;
+		y +=_wPlayerBbox;
 		vSpeed = 0;
 		_collision = true;
 	}
 	
 	//Vertical Entities
-	var _entityCount = instance_position_list(x, y + vSpeed, pEntity, _entityList, false);
+	
+	_entityCount = EntityCollisionVertical(_entityList, _wPlayerBbox, vSpeed, x, y);
 	var _snapY;
 	
 	while(_entityCount > 0) {
 		var _entityCheck = _entityList[| 0];
 		if (_entityCheck.entityCollision == true) {
-			
-			//Move as close as we can
-			if(sign(vSpeed) == -1) _snapY = _entityCheck.bbox_bottom+1;
+			//Move as close as we can, taking into account the collisionBox of the player
+			if(sign(vSpeed) == -1) _snapY = _entityCheck.bbox_bottom +_wPlayerBbox + 1;
 			else _snapY = _entityCheck.bbox_top-1;
 			y =_snapY;
 			vSpeed = 0;
