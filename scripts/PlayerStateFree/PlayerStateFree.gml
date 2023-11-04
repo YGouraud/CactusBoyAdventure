@@ -35,9 +35,9 @@ function PlayerStateFree(){
 		// 3. Otherwise, activate the script
 		// 4. If it's an NPC, make it face forward
 		
-		var _activateX = lengthdir_x(8, direction);
-		var _activateY = lengthdir_y(8, direction);
-		activate = instance_position(x+_activateX, y-8+_activateY, pEntity);
+		var _activateX = lengthdir_x(12, direction);
+		var _activateY = lengthdir_y(12, direction);
+		activate = instance_position(x+_activateX, y-4+_activateY, pEntity);
 		
 		if (activate == noone || activate.entityActivateScript == -1)
 		{
