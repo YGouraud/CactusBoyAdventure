@@ -38,6 +38,8 @@
     {"$GMObjectProperty":"v1","%Name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"name":"entityHitScript","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"entityFragmentCount","filters":[],"listItems":[],"multiselect":false,"name":"entityFragmentCount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"entityFragment","filters":[],"listItems":[],"multiselect":false,"name":"entityFragment","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"entityThrowBreak","filters":[],"listItems":[],"multiselect":false,"name":"entityThrowBreak","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"entityThrowDistance","filters":[],"listItems":[],"multiselect":false,"name":"entityThrowDistance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"52","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
