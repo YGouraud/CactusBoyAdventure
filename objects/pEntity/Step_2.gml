@@ -25,6 +25,7 @@ if (!global.gamePaused){
 				thrown = false;
 				grav = 0.1;
 				//Break on collision ???
+				if (entityCollisionOriginal) resetCollision = true; //lors de l'arrêt du lancer, la collision PEUT être réactivée
 			}
 			
 			throwPercent = throwStartPercent + lerp(0, 1 - throwStartPercent, throwDistanceTravelled / throwDistance);
@@ -33,6 +34,7 @@ if (!global.gamePaused){
 			{
 				thrown = false;
 				if (entityThrowBreak) instance_destroy();
+				else if (entityCollisionOriginal) resetCollision = true;
 			}
 		}
 		else
@@ -49,6 +51,13 @@ if (!global.gamePaused){
 				grav = 0.1;	
 			}
 		}
+	}
+	
+	//Si après le lancer, le joueur et l'objet se touche : ne pas réactiver la colission tout de suite
+	if(resetCollision && !place_meeting(x,y,oPlayer))
+	{
+		resetCollision = false;
+		entityCollision = true;
 	}
 }
 
