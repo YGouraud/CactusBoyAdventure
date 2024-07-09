@@ -7,7 +7,7 @@ function ScriptExecuteArray(){
 	var _scr = argument0;
 	var _args = argument1;
 
-	switch (array_length_1d(_args)) {
+	switch (array_length(_args)) {
 		
 	case 1: return script_execute(_scr, _args[0]);
 	case 2: return script_execute(_scr, _args[0], _args[1]);

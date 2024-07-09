@@ -11,3 +11,14 @@
 #macro IN 1
 
 #macro CARRY_HEIGHT 20
+
+enum ENNEMYSTATE
+{	
+	IDLE,
+	WANDER,
+	CHASE,
+	ATTACK,
+	HURT,
+	DIE,
+	WAIT
+}
