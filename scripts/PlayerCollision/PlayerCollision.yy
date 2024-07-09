@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "PlayerCollision",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Player General",
-    "path": "folders/Scripts/Player General.yy",
+  "$GMScript":"",
+  "%Name":"PlayerCollision",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"PlayerCollision",
+  "parent":{
+    "name":"Player General",
+    "path":"folders/Scripts/Player General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "BboxCollisionHorizontal",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Collision",
-    "path": "folders/Scripts/Collision.yy",
+  "$GMScript":"",
+  "%Name":"BboxCollisionHorizontal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BboxCollisionHorizontal",
+  "parent":{
+    "name":"Collision",
+    "path":"folders/Scripts/Collision.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

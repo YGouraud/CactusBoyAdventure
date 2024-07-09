@@ -2,7 +2,6 @@ function PlayerCollision(){
 	var _collision = false;
 	var _entityList = ds_list_create();
 	
-	// _hPlayerBbox = sprite_get_bbox_bottom(sprite_index) - sprite_get_bbox_top(sprite_index); //pas centré
 	var _wPlayerBbox = floor((sprite_get_bbox_right(sprite_index) - sprite_get_bbox_left(sprite_index) + 1) * 0.5); //centré
 	
 	//Horizontal Tiles
@@ -10,7 +9,7 @@ function PlayerCollision(){
 	if (sign(hSpeed) == 1 && BboxCollisionHorizontal(collisionMap, _wPlayerBbox, hSpeed, x, y))
 	{
 		x -= x mod TILE_SIZE;
-		x += TILE_SIZE - 1 -_wPlayerBbox;
+		x += TILE_SIZE - 1 - _wPlayerBbox;
 		hSpeed = 0;
 		_collision = true;
 	}
@@ -18,8 +17,8 @@ function PlayerCollision(){
 	if (sign(hSpeed) == -1 && BboxCollisionHorizontal(collisionMap, _wPlayerBbox, hSpeed, x, y))
 	{
 		x -= x mod TILE_SIZE;
+		x += _wPlayerBbox;
 		hSpeed = 0;
-		x +=_wPlayerBbox;
 		_collision = true;
 	}
 	
@@ -27,7 +26,6 @@ function PlayerCollision(){
 	
 	var _entityCount = EntityCollisionHorizontal(_entityList, _wPlayerBbox, hSpeed, x, y);
 	var _snapX;
-	//if (ds_list_size(_entityList) != 0) show_debug_message(string(ds_list_size(_entityList)) + "\n");
 	
 	while(_entityCount > 0) {
 		var _entityCheck = _entityList[| 0];

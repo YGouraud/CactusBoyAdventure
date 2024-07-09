@@ -9,3 +9,16 @@
 #macro TRANSITION_SPEED 0.02
 #macro OUT 0
 #macro IN 1
+
+#macro CARRY_HEIGHT 20
+
+enum ENNEMYSTATE
+{	
+	IDLE,
+	WANDER,
+	CHASE,
+	ATTACK,
+	HURT,
+	DIE,
+	WAIT
+}
