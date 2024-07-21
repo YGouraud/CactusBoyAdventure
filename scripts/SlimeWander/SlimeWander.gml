@@ -42,4 +42,15 @@ function SlimeWander(){
 		//Collide and move
 		EnemyTileCollision();
 	}
+	
+	//Check for aggro
+	if (++aggroCheck >= aggroCheckDuration)
+	{
+		aggroCheck = 0;
+		if (instance_exists(oPlayer)) && (point_distance(x,y,oPlayer.x,oPlayer.y) <= enemyAggroRadius)
+		{
+			state = ENNEMYSTATE.CHASE;
+			target = oPlayer;
+		}
+	}
 }

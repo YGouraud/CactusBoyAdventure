@@ -27,7 +27,4 @@ function EnemyTileCollision(){
 	y += vSpeed;
 	
 	return _collision;
-	
-	
-
 }

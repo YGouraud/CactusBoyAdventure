@@ -8,3 +8,4 @@ sprMove = sSlime;
 
 //Enemy Scripts
 enemyScript[ENNEMYSTATE.WANDER] = SlimeWander;
+enemyScript[ENNEMYSTATE.CHASE] = SlimeChase;

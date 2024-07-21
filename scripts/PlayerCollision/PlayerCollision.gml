@@ -34,7 +34,7 @@ function PlayerCollision(){
 			//Move as close as we can
 			if(sign(hSpeed) == -1) _snapX = _entityCheck.bbox_right + 1 + _wPlayerBbox;
 			else _snapX = _entityCheck.bbox_left - 1 - _wPlayerBbox;
-			x =_snapX;
+			x = _snapX;
 			hSpeed = 0;
 			_collision = true;
 			_entityCount = 0;
@@ -80,7 +80,7 @@ function PlayerCollision(){
 			//Move as close as we can, taking into account the collisionBox of the player
 			if(sign(vSpeed) == -1) _snapY = _entityCheck.bbox_bottom +_wPlayerBbox + 1;
 			else _snapY = _entityCheck.bbox_top-1;
-			y =_snapY;
+			y = _snapY;
 			vSpeed = 0;
 			_collision = true;
 			_entityCount = 0;
